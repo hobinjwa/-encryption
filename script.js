@@ -22,3 +22,10 @@ function decrypt() {
     }
     document.getElementById('input').value = text;
 }
+
+function copyText(elementId) {
+    const inputElement = document.getElementById(elementId);
+    inputElement.select();
+    document.execCommand('copy');
+    alert('복사되었습니다!');
+}
