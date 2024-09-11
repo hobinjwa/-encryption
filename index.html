@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>암호화</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>암호화</h1>
+    <label for="input">글자</label>
+    <input type="text" id="input" oninput="encrypt()">
+    <div class="divider">↕️</div>
+    <label for="encryptInput">암호</label>
+    <input type="text" id="encryptInput" oninput="decrypt()">
+    <label for="complexity">복잡도</label>
+    <input type="number" id="complexity" placeholder="1" oninput="updateComplexityInput()">
+    <script src="script.js"></script>
+    <footer>
+        <p>created by hobinjwa</p>
+    </footer>
+</body>
+</html>
